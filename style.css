@@ -1,39 +1,124 @@
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    direction: rtl;
-    text-align: center;
     background: #0e0f11;
     color: #fff;
-    margin: 0;
 }
 
-header {
-    padding: 50px 20px;
-    background: #111;
-    color: white;
+.container {
+    display: flex;
+    padding: 20px;
 }
 
-section {
-    padding: 40px 20px;
-    background: #1a1c1f;
-    margin: 20px;
-    border-radius: 10px;
+.sidebar {
+    width: 300px;
+    background: #111214;
+    padding: 25px;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    background: #222;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.name {
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.title {
+    color: #aaa;
+    margin: 5px 0 15px;
+}
+
+.description {
+    font-size: 14px;
+    color: #ddd;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.core-tech h3 {
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.tags span {
+    background: #1d1f22;
+    padding: 6px 12px;
+    border-radius: 8px;
+    margin: 5px;
+    display: inline-block;
+    font-size: 13px;
+}
+
+.social-links a {
+    display: block;
+    margin-top: 15px;
+    color: #00b4d8;
+    text-decoration: none;
+}
+
+.content {
+    flex: 1;
+}
+
+.box {
+    background: #111214;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
 }
 
 h2 {
-    color: #00b4d8;
+    margin-bottom: 15px;
+    border-right: 4px solid #00b4d8;
+    padding-right: 10px;
 }
 
-ul {
+.stack-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.stack-box {
+    background: #1a1c1f;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.stack-box ul {
     list-style: none;
     padding: 0;
-    line-height: 2;
+    margin-top: 10px;
 }
 
-.project-card {
-    background: #121416;
-    padding: 20px;
+.stack-box li {
+    margin-bottom: 8px;
+}
+
+.project {
+    background: #1a1c1f;
+    padding: 15px;
     border-radius: 10px;
-    margin-top: 20px;
-    border: 1px solid #222;
+    margin-bottom: 15px;
+}
+
+.cert-list {
+    list-style: none;
+    padding: 0;
+}
+
+.cert-list li {
+    padding: 8px 0;
 }
