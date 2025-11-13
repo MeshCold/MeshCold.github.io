@@ -94,6 +94,7 @@ h2 {
     padding-right: 10px;
 }
 
+
 .stack-grid {
     display: flex;
     gap: 20px;
@@ -142,69 +143,42 @@ h2 {
     transform: translateY(-3px);
 }
 
-.projects-grid {
+
+.projects-text-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
     margin-top: 20px;
 }
 
-.project-card {
-    position: relative;
-    overflow: hidden;
-    border-radius: 12px;
+.project-text-card {
     background: #1a1c1f;
+    padding: 20px;
+    border-radius: 12px;
     border: 1px solid #1f2124;
-    height: 320px;
 }
 
-.project-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 0.4s ease;
-}
-
-.project-card:hover img {
-    transform: scale(1.1);
-    opacity: 0.3;
-}
-
-.project-card .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    opacity: 0;
-    transition: 0.3s ease-in-out;
-}
-
-.project-card:hover .overlay {
-    opacity: 1;
-}
-
-.project-card .overlay h3 {
-    margin-bottom: 10px;
+.project-text-card h3 {
+    margin: 0 0 8px;
     color: #fff;
 }
 
-.project-card .overlay p {
-    color: #ccc;
-    font-size: 14px;
-    margin-bottom: 15px;
+.project-text-card p {
+    margin: 0 0 12px;
+    color: #bbb;
+    line-height: 1.6;
 }
 
-.project-card .overlay a {
-    color: #00b4d8;
-    text-decoration: none;
+.project-text-card a {
+    color: #8ab4f8;
     font-weight: bold;
-    font-size: 15px;
+    text-decoration: none;
 }
+
+.project-text-card a:hover {
+    color: #bcdcff;
+}
+
 
 .cert-item {
     display: flex;
@@ -220,7 +194,6 @@ h2 {
 .cert-item img {
     width: 38px;
     height: 38px;
-    border-radius: 6px;
 }
 
 .cert-item h3 {
@@ -235,6 +208,8 @@ h2 {
     color: #bbb;
 }
 
+
+
 .box a {
     color: #8ab4f8;
     text-decoration: none;
@@ -242,53 +217,5 @@ h2 {
 }
 
 .box a:hover {
-    color: #bcdcff;
-}
-
-.projects-static-grid {
-    display: grid;
-    gap: 25px;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    margin-top: 20px;
-}
-
-.project-static-card {
-    background: #1a1c1f;
-    border-radius: 14px;
-    padding: 18px;
-    border: 1px solid #1f2124;
-}
-
-.project-static-card img {
-    width: 100%;
-    height: 210px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 12px;
-}
-
-.project-text h3 {
-    margin: 0;
-    margin-bottom: 8px;
-    font-size: 17px;
-    color: #fff;
-}
-
-.project-text p {
-    margin: 0;
-    margin-bottom: 10px;
-    font-size: 14px;
-    color: #ccc;
-    line-height: 1.5;
-}
-
-.project-text a {
-    color: #8ab4f8;
-    font-size: 15px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.project-text a:hover {
     color: #bcdcff;
 }
